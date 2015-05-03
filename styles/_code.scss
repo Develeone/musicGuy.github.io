@@ -1,0 +1,216 @@
+$large: new-breakpoint(min-width 765px 3);
+$medium: new-breakpoint(max-width 764px min-width 517px 2);
+$small: new-breakpoint(max-width 516px 1);
+$mobile: new-breakpoint(max-width 764px 1);
+
+header{
+	@include outer-container;
+	
+	
+	@include media($large){
+		div{
+			@include span-columns(1);
+			
+		}
+	}
+	@include media($medium){
+		div:nth-child(1){
+			@include span-columns(2);
+			@include display(flex);
+			img{
+				margin: auto;
+			}
+			@include omega;
+		}
+		div:nth-child(2){
+			@include span-columns(1);
+			h1, h3{
+				text-align: right;
+			}
+		}
+		div:nth-child(3){
+			@include span-columns(1);
+			h2, h3{
+				text-align: left;
+			}
+		}
+	}
+	
+	@include media($small){
+		div{
+			@include span-columns(1);
+			@include omega;
+		}
+		
+		div:nth-child(1){
+			@include display(flex);
+			img{
+				margin: auto;
+			}
+		}
+		h2, h3, p{
+			text-align: center !important;
+		}
+		
+	}
+	
+	div:nth-child(3){
+		h3, h2{
+			text-align: left;
+		}
+	}
+		
+	h1, h3, h2{
+		text-align: center;
+		font-weight: 300;
+	}
+	div{
+		h1, h2, h3, h4{
+	  		font-family: 'Roboto', sans-serif;
+  		}
+	}
+	@include position(relative, 10px null);
+	margin-bottom: 20px;
+}
+
+.sorry{
+	background-image: url(../hall.png);  
+ 	background-position: center center;
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+ 	background-size: cover;
+ 	height: 445px; 	
+ 	h2, h3{
+	 	font-family: 'Roboto';
+ 	}
+ 	@include display(flex);
+	div{
+		padding: 0 20px;
+		background-color: #5d91f4;
+		margin: auto;
+		h2, h3{
+			text-align: center;
+			color: rgb(255, 255, 255);
+		}
+		opacity: 0.9;
+		height:auto;
+		width:auto;
+	}
+}
+
+
+.number{
+	min-height: 150px;
+	@include outer-container;
+	@include display(flex);
+	@include justify-content(center);
+	@include media(min-width 765px){
+		> div{
+			@include span-columns(4);
+			@include omega;
+		}
+	}
+	@include media(max-width 765px){
+		@include display(block);
+		> div{
+			@include span-columns(12);
+			@include omega;
+			h3, p{
+				text-align: center !important;
+			}
+		}
+	}
+			
+	> div:nth-child(1){
+		h3, p{
+			text-align: right;
+		}		
+	}
+	> div:nth-child(2){
+		@include display(inline-flex);
+		h4, h3{
+			margin: 0;
+			color: white;
+			word-break: break-word;
+			text-align: center;
+
+		}
+		div{
+			margin: auto;
+			background-color: #275ec4;
+			padding: 15px;
+			flex-shrink: 0;
+			width: auto;
+
+		}
+	}
+	> div:nth-child(3){
+		h3, p{
+			text-align: left;
+		}
+	}
+	h3, h6, h4, p{
+		text-align: center;
+	}
+	h3, h4, p{
+		font-family: 'Roboto';
+	}
+}
+
+.bed{
+	background-image: url(../bed.png);  
+ 	background-position: center center;
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+ 	background-size: cover;
+ 	height: 504px;
+ 	@include display(flex);
+ 	div{
+	 	padding: 0 20px;
+	 	height: auto;
+	 	width: auto;
+	 	margin: auto;
+	 	top: 100px;
+	 	background-color: rgb(57, 117, 241);
+	 	opacity: 0.71;
+	 	position: relative;
+	 	h3, h4{
+		 	text-align: center;
+		 	color: white;
+		 	font-family: 'Roboto';
+	 	}
+ 	}
+}
+
+
+footer{
+	margin-top: 50px;
+	h2, address, h3, a{
+		text-align: center;
+		font-family: "Roboto";
+	}
+	h2:nth-child(1){
+		color: #275ec4;
+	}
+	h2:nth-child(2){
+		color: #616161;
+	}
+	address{
+		font-style: normal;
+		color: #616161;
+		margin-bottom: 20px;
+	}
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	
+	div{
+		@include flex-flow(row wrap);
+		@include display(flex);
+		@include justify-content(space-around);
+		img{
+			padding: 15px;
+		}	
+	}
+}
