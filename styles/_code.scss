@@ -110,7 +110,7 @@ header{
 			@include omega;
 		}
 	}
-	@include media(max-width 765px){
+	@include media(max-width 764px){
 		@include display(block);
 		> div{
 			@include span-columns(12);
