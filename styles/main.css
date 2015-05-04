@@ -363,6 +363,13 @@ header {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   top: 10px;
   bottom: 10px;
@@ -413,7 +420,7 @@ header {
       width: 41.98184%; }
       header div:nth-child(3):last-child {
         margin-right: 0; }
-      header div:nth-child(3) h2, header div:nth-child(3) h3 {
+      header div:nth-child(3) h2, header div:nth-child(3) h4 {
         text-align: left; } }
   @media screen and (max-width: 516px) {
     header div {
@@ -434,13 +441,27 @@ header {
       display: flex; }
       header div:nth-child(1) img {
         margin: auto; }
-    header h2, header h3, header p {
+    header h2, header h3, header p, header h4 {
       text-align: center !important; } }
-  header div:nth-child(3) h3, header div:nth-child(3) h2 {
+  header div:nth-child(3) h4, header div:nth-child(3) h2 {
     text-align: left; }
+  header div:nth-child(3) h4 {
+    margin-bottom: 5px; }
+  header div:nth-child(3) h2, header div:nth-child(3) p {
+    margin: 5px; }
+  header div:nth-child(3) h4 {
+    font-style: normal;
+    font-weight: 200; }
   header h1, header h3, header h2 {
     text-align: center;
     font-weight: 300; }
+  header div:nth-child(2) {
+    margin-top: auto;
+    margin-bottom: auto; }
+    header div:nth-child(2) h2 {
+      margin-bottom: 0; }
+    header div:nth-child(2) h3 {
+      margin-top: 0; }
   header div h1, header div h2, header div h3, header div h4 {
     font-family: 'Roboto', sans-serif; }
 
@@ -505,7 +526,7 @@ header {
       margin-right: 0; }
       .number > div:last-child {
         margin-right: 0; } }
-  @media screen and (max-width: 765px) {
+  @media screen and (max-width: 764px) {
     .number {
       display: block; }
       .number > div {
@@ -545,6 +566,8 @@ header {
     text-align: center; }
   .number h3, .number h4, .number p {
     font-family: 'Roboto'; }
+  .number > div {
+    margin: 30px 0; }
 
 .bed {
   background-image: url(../bed.png);
@@ -591,26 +614,12 @@ footer {
     text-decoration: none;
     color: black; }
   footer div {
-    -webkit-flex-flow: row wrap;
-    -moz-flex-flow: row wrap;
-    flex-flow: row wrap;
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: distribute;
-    -moz-box-pack: distribute;
-    box-pack: distribute;
-    -webkit-justify-content: space-around;
-    -moz-justify-content: space-around;
-    -ms-justify-content: space-around;
-    -o-justify-content: space-around;
-    justify-content: space-around;
-    -ms-flex-pack: distribute; }
-    footer div img {
-      padding: 15px; }
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    footer div::after {
+      clear: both;
+      content: "";
+      display: table; }
 
 /*# sourceMappingURL=main.css.map */
