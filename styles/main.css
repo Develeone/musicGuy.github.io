@@ -363,13 +363,6 @@ header {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
   top: 10px;
   bottom: 10px;
@@ -379,15 +372,15 @@ header {
     content: "";
     display: table; }
   @media screen and (min-width: 765px) {
-    header div {
+    header > div {
       float: left;
       display: block;
       margin-right: 10.1484%;
       width: 26.56773%; }
-      header div:last-child {
+      header > div:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 764px) and (min-width: 517px) {
-    header div:nth-child(1) {
+    header > div:nth-child(1) {
       float: left;
       display: block;
       margin-right: 16.03631%;
@@ -400,38 +393,38 @@ header {
       display: -ms-flexbox;
       display: flex;
       margin-right: 0; }
-      header div:nth-child(1):last-child {
+      header > div:nth-child(1):last-child {
         margin-right: 0; }
-      header div:nth-child(1) img {
+      header > div:nth-child(1) img {
         margin: auto; }
-    header div:nth-child(2) {
+    header > div:nth-child(2) {
       float: left;
       display: block;
       margin-right: 16.03631%;
       width: 41.98184%; }
-      header div:nth-child(2):last-child {
+      header > div:nth-child(2):last-child {
         margin-right: 0; }
-      header div:nth-child(2) h1, header div:nth-child(2) h3 {
+      header > div:nth-child(2) h1, header > div:nth-child(2) h3 {
         text-align: right; }
-    header div:nth-child(3) {
+    header > div:nth-child(3) {
       float: left;
       display: block;
       margin-right: 16.03631%;
       width: 41.98184%; }
-      header div:nth-child(3):last-child {
+      header > div:nth-child(3):last-child {
         margin-right: 0; }
-      header div:nth-child(3) h2, header div:nth-child(3) h4 {
+      header > div:nth-child(3) h2, header > div:nth-child(3) h4 {
         text-align: left; } }
   @media screen and (max-width: 516px) {
-    header div {
+    header > div {
       float: left;
       display: block;
       margin-right: 38.19821%;
       width: 100%;
       margin-right: 0; }
-      header div:last-child {
+      header > div:last-child {
         margin-right: 0; }
-    header div:nth-child(1) {
+    header > div:nth-child(1) {
       display: -webkit-box;
       display: -moz-box;
       display: box;
@@ -439,30 +432,42 @@ header {
       display: -moz-flex;
       display: -ms-flexbox;
       display: flex; }
-      header div:nth-child(1) img {
+      header > div:nth-child(1) img {
         margin: auto; }
     header h2, header h3, header p, header h4 {
-      text-align: center !important; } }
-  header div:nth-child(3) h4, header div:nth-child(3) h2 {
+      text-align: center !important; }
+    header > div:nth-child(2) div {
+      margin: auto; } }
+  header > div:nth-child(3) h4, header > div:nth-child(3) h2 {
     text-align: left; }
-  header div:nth-child(3) h4 {
+  header > div:nth-child(3) h4 {
     margin-bottom: 5px; }
-  header div:nth-child(3) h2, header div:nth-child(3) p {
+  header > div:nth-child(3) h2, header > div:nth-child(3) p {
     margin: 5px; }
-  header div:nth-child(3) h4 {
+  header > div:nth-child(3) h4 {
     font-style: normal;
     font-weight: 200; }
   header h1, header h3, header h2 {
     text-align: center;
     font-weight: 300; }
-  header div:nth-child(2) {
-    margin-top: auto;
-    margin-bottom: auto; }
-    header div:nth-child(2) h2 {
+  header > div:nth-child(2) {
+    padding-top: 15px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    header > div:nth-child(2) h2 {
       margin-bottom: 0; }
-    header div:nth-child(2) h3 {
+    header > div:nth-child(2) h3 {
       margin-top: 0; }
-  header div h1, header div h2, header div h3, header div h4 {
+    header > div:nth-child(2) div {
+      margin-top: auto;
+      margin-bottom: auto;
+      width: auto; }
+  header > div h1, header > div h2, header > div h3, header > div h4 {
     font-family: 'Roboto', sans-serif; }
 
 .sorry {

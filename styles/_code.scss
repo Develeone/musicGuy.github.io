@@ -5,15 +5,14 @@ $mobile: new-breakpoint(max-width 764px 1);
 
 header{
 	@include outer-container;
-	@include display(flex);
 	
 	@include media($large){
-		div{
+		>div{
 			@include span-columns(1);
 		}
 	}
 	@include media($medium){
-		div:nth-child(1){
+		>div:nth-child(1){
 			@include span-columns(2);
 			@include display(flex);
 			img{
@@ -21,14 +20,14 @@ header{
 			}
 			@include omega;
 		}
-		div:nth-child(2){
+		>div:nth-child(2){
 			@include span-columns(1);
 			h1, h3{
 				text-align: right;
 				
 			}
 		}
-		div:nth-child(3){
+		>div:nth-child(3){
 			@include span-columns(1);
 			h2, h4{
 				text-align: left;
@@ -37,12 +36,12 @@ header{
 	}
 	
 	@include media($small){
-		div{
+		>div{
 			@include span-columns(1);
 			@include omega;
 		}
 		
-		div:nth-child(1){
+		>div:nth-child(1){
 			@include display(flex);
 			img{
 				margin: auto;
@@ -51,11 +50,15 @@ header{
 		h2, h3, p, h4{
 			text-align: center !important;
 		}
-		
+		>div:nth-child(2){
+			div{
+				margin: auto;
+			}
+		}
 	}
 	
 	
-	div:nth-child(3){
+	>div:nth-child(3){
 		h4, h2{
 			text-align: left;
 		}
@@ -75,18 +78,23 @@ header{
 		text-align: center;
 		font-weight: 300;
 	}
-	div:nth-child(2){
-		margin-top: auto;
-		margin-bottom: auto;
+	>div:nth-child(2){
+		padding-top: 15px;
 		h2{
 			margin-bottom: 0;	
 		}
 		h3{
 			margin-top: 0;
 		}
+		@include display(flex);
+		div{
+			margin-top: auto;
+			margin-bottom: auto;
+			width: auto;
+		}
 	}
 	
-	div{
+	>div{
 		h1, h2, h3, h4{
 	  		font-family: 'Roboto', sans-serif;
   		}
