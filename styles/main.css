@@ -471,10 +471,9 @@ header {
     font-family: 'Roboto', sans-serif; }
 
 .sorry {
-  background-image: url(../hall.png);
+  background-image: url(../hall.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   height: 445px;
   display: -webkit-box;
@@ -575,10 +574,9 @@ header {
     margin: 30px 0; }
 
 .bed {
-  background-image: url(../bed.png);
+  background-image: url(../bed.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   height: 504px;
   display: -webkit-box;

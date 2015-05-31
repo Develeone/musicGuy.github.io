@@ -1,0 +1,1174 @@
+header {
+  *zoom: 1;
+  width: auto;
+  max-width: 1280px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 30px;
+}
+header:before,
+header:after {
+  content: '';
+  display: table;
+}
+header:after {
+  clear: both;
+}
+header img {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 22.75%;
+  margin-left: 0%;
+  margin-right: 3%;
+  width: 209px;
+  height: 85px;
+}
+header img:before,
+header img:after {
+  content: '';
+  display: table;
+}
+header img:after {
+  clear: both;
+}
+header img:last-child {
+  margin-right: 0%;
+}
+header div:nth-child(2) {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 22.75%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+header div:nth-child(2):before,
+header div:nth-child(2):after {
+  content: '';
+  display: table;
+}
+header div:nth-child(2):after {
+  clear: both;
+}
+header div:nth-child(2):last-child {
+  margin-right: 0%;
+}
+header div:nth-child(2) p {
+  font-size: 36px;
+  line-height: 30px;
+}
+header div:nth-child(2) p:nth-child(1) {
+  color: #363636;
+  font-family: MyriadPro;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+header div:nth-child(2) p:nth-child(2) {
+  color: #2b97d5;
+  font-family: "Myriad Pro";
+  font-weight: 700;
+  margin-top: 0;
+}
+header div:nth-child(3) {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+header div:nth-child(3):before,
+header div:nth-child(3):after {
+  content: '';
+  display: table;
+}
+header div:nth-child(3):after {
+  clear: both;
+}
+header div:nth-child(3):nth-child(4n) {
+  margin-right: 0%;
+  float: right;
+}
+header div:nth-child(3):nth-child(4n+1) {
+  clear: both;
+}
+header div:nth-child(3) p {
+  text-align: right;
+}
+header div:nth-child(3) p:nth-child(1) {
+  color: #363636;
+  font-family: "Myriad Pro";
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+header div:nth-child(3) p:nth-child(2) {
+  font-size: 36px;
+  margin-top: 0;
+}
+nav {
+  *zoom: 1;
+  width: auto;
+  max-width: 100%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #2b97d5;
+}
+nav:before,
+nav:after {
+  content: '';
+  display: table;
+}
+nav:after {
+  clear: both;
+}
+nav ul {
+  list-style-type: none;
+  height: 51px;
+  margin: 0;
+}
+nav li {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 10%;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(190,122,2,0.84);
+  color: #fff;
+  font-family: "Myriad Pro";
+  font-size: 16px;
+  font-weight: 700;
+  width: ;
+  height: 51px;
+}
+nav li:before,
+nav li:after {
+  content: '';
+  display: table;
+}
+nav li:after {
+  clear: both;
+}
+nav li.order {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 20%;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: center;
+  background-color: #ff9500;
+  background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: -ms-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: linear-gradient(to top, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  margin: auto;
+}
+nav li.order:before,
+nav li.order:after {
+  content: '';
+  display: table;
+}
+nav li.order:after {
+  clear: both;
+}
+.ship {
+  background-color: #343434;
+  background-image: url("ship-background.png");
+  height: 641px;
+}
+.ship >div:nth-child(1) {
+  position: relative;
+  top: 100px;
+  background-color: #fff;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  *zoom: 1;
+  width: auto;
+  max-width: 920px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.ship >div:nth-child(1):before,
+.ship >div:nth-child(1):after {
+  content: '';
+  display: table;
+}
+.ship >div:nth-child(1):after {
+  clear: both;
+}
+.ship >div:nth-child(1) p {
+  color: #2b97d5;
+  font-family: "Myriad Pro";
+  text-align: center;
+}
+.ship >div:nth-child(2) {
+  *zoom: 1;
+  width: auto;
+  max-width: 920px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  top: 150px;
+}
+.ship >div:nth-child(2):before,
+.ship >div:nth-child(2):after {
+  content: '';
+  display: table;
+}
+.ship >div:nth-child(2):after {
+  clear: both;
+}
+.ship >div:nth-child(2) >div:nth-child(1) {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 80%;
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 560px;
+  height: 51px;
+  background-color: #ff9600;
+  background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: -ms-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: linear-gradient(to top, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.96);
+  box-shadow: inset 0 -1px 1px rgba(255,255,255,0.96);
+  text-align: center;
+}
+.ship >div:nth-child(2) >div:nth-child(1):before,
+.ship >div:nth-child(2) >div:nth-child(1):after {
+  content: '';
+  display: table;
+}
+.ship >div:nth-child(2) >div:nth-child(1):after {
+  clear: both;
+}
+.ship >div:nth-child(2) >div:nth-child(1) p {
+  text-shadow: 0 1px 1px rgba(190,122,2,0.84);
+  color: #fff;
+  font-family: "Myriad Pro";
+  font-weight: 700;
+}
+.ship >div:nth-child(2) >div:nth-child(2) {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 20%;
+  margin-left: 0%;
+  margin-right: 0%;
+  background-color: #2b97d5;
+  background-image: -webkit-linear-gradient(left, #238cc8 0%, #299ee1 100%);
+  background-image: -moz-linear-gradient(left, #238cc8 0%, #299ee1 100%);
+  background-image: -o-linear-gradient(left, #238cc8 0%, #299ee1 100%);
+  background-image: -ms-linear-gradient(left, #238cc8 0%, #299ee1 100%);
+  background-image: linear-gradient(to right, #238cc8 0%, #299ee1 100%);
+  border: 1px solid #fff;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin-top: 7px;
+}
+.ship >div:nth-child(2) >div:nth-child(2):before,
+.ship >div:nth-child(2) >div:nth-child(2):after {
+  content: '';
+  display: table;
+}
+.ship >div:nth-child(2) >div:nth-child(2):after {
+  clear: both;
+}
+.ship >div:nth-child(2) >div:nth-child(2) p {
+  color: #fff;
+  font-family: "Myriad Pro";
+  font-weight: 700;
+  margin: 5%;
+}
+.ship >div:nth-child(3) {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  position: relative;
+  top: 200px;
+  background-color: #238ecb;
+  *zoom: 1;
+  width: auto;
+  max-width: 920px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.ship >div:nth-child(3):before,
+.ship >div:nth-child(3):after {
+  content: '';
+  display: table;
+}
+.ship >div:nth-child(3):after {
+  clear: both;
+}
+.ship >div:nth-child(3) div {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 20%;
+  margin-left: 0%;
+  margin-right: 0%;
+  border-right: 1px soild #4580a3;
+}
+.ship >div:nth-child(3) div:before,
+.ship >div:nth-child(3) div:after {
+  content: '';
+  display: table;
+}
+.ship >div:nth-child(3) div:after {
+  clear: both;
+}
+.ship >div:nth-child(3) div img {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.ship >div:nth-child(3) div p {
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+div.who {
+  margin-top: 40px;
+  *zoom: 1;
+  width: auto;
+  max-width: 920px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+div.who:before,
+div.who:after {
+  content: '';
+  display: table;
+}
+div.who:after {
+  clear: both;
+}
+div.who h3 {
+  color: #2b97d5;
+  font-family: "Myriad Pro";
+  font-size: 24px;
+  font-weight: 700;
+}
+div.who p {
+  color: #363636;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  font-weight: 400;
+}
+div.who div:first-child {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 19.88888888888889%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+div.who div:first-child:before,
+div.who div:first-child:after {
+  content: '';
+  display: table;
+}
+div.who div:first-child:after {
+  clear: both;
+}
+div.who div:first-child:last-child {
+  margin-right: 0%;
+}
+div.who div:nth-child(2) {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 77.11111111111111%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+div.who div:nth-child(2):before,
+div.who div:nth-child(2):after {
+  content: '';
+  display: table;
+}
+div.who div:nth-child(2):after {
+  clear: both;
+}
+div.who div:nth-child(2):last-child {
+  margin-right: 0%;
+}
+div.records {
+  background-image: url("records-background.png");
+  background-color: #0f5b86;
+}
+div.records h3 {
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+div.records section>div {
+  width: 231px;
+  height: 192px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  background-color: #fff;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  margin: auto !important;
+}
+div.records section>div div {
+  width: 218px;
+  height: 181px;
+  background-color: #fff;
+  border: 2px solid #2b97d5;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin: auto;
+}
+div.records section {
+  *zoom: 1;
+  width: auto;
+  max-width: 920px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+div.records section:before,
+div.records section:after {
+  content: '';
+  display: table;
+}
+div.records section:after {
+  clear: both;
+}
+div.records section.first-row>div {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333333333333%;
+  margin-left: 0%;
+  margin-right: 3%;
+  width: 231px;
+  height: 192px;
+}
+div.records section.first-row>div:before,
+div.records section.first-row>div:after {
+  content: '';
+  display: table;
+}
+div.records section.first-row>div:after {
+  clear: both;
+}
+div.records section.first-row>div:last-child {
+  margin-right: 0%;
+}
+div.records section.second-row>div {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+  width: 231px;
+  height: 192px;
+}
+div.records section.second-row>div:before,
+div.records section.second-row>div:after {
+  content: '';
+  display: table;
+}
+div.records section.second-row>div:after {
+  clear: both;
+}
+div.records section.second-row>div:last-child {
+  margin-right: 0%;
+}
+div.records section.second-row {
+  position: relative;
+  bottom: 10px;
+  margin-top: 30px;
+}
+div.records img {
+  margin-left: 65px;
+  margin-top: 20px;
+}
+div.records p {
+  text-align: center;
+  color: #363636;
+  font-family: "Myriad Pro";
+  font-size: 16px;
+  margin-top: 30px;
+}
+div.why {
+  *zoom: 1;
+  width: auto;
+  max-width: 960px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+div.why:before,
+div.why:after {
+  content: '';
+  display: table;
+}
+div.why:after {
+  clear: both;
+}
+div.why h3 {
+  text-align: center;
+  font-size: 48px;
+}
+div.why div {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 14.166666666666664%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+div.why div:before,
+div.why div:after {
+  content: '';
+  display: table;
+}
+div.why div:after {
+  clear: both;
+}
+div.why div:nth-child(7n) {
+  margin-right: 0%;
+  float: right;
+}
+div.why div:nth-child(7n+1) {
+  clear: both;
+}
+div.why div p {
+  text-align: center;
+  color: #363636;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  font-weight: 400;
+}
+div.why div img {
+  margin-left: 25px;
+}
+div.why section {
+  position: relative;
+  top: 30px;
+}
+div.why section div {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+div.why section div:before,
+div.why section div:after {
+  content: '';
+  display: table;
+}
+div.why section div:after {
+  clear: both;
+}
+div.why section p,
+div.why section h3 {
+  text-align: left;
+  margin-top: 0;
+}
+div.why section h3 {
+  margin-bottom: 10px;
+  color: #363636;
+  font-family: "Myriad Pro";
+  font-size: 24px;
+  font-weight: 700;
+}
+div.why section p {
+  color: #363636;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  font-weight: 400;
+}
+div.why section button {
+  width: 495px;
+  height: 41px;
+  background-color: #ff9600;
+  background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: -ms-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: linear-gradient(to top, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.96);
+  box-shadow: inset 0 -1px 1px rgba(255,255,255,0.96);
+  text-shadow: 0 1px 1px rgba(190,122,2,0.84);
+  color: #fff;
+  font-family: "Myriad Pro";
+  font-size: 20px;
+  font-weight: 700;
+}
+div.job {
+  position: relative;
+  background-image: url("job-background.png");
+  top: 30px;
+  background-color: #2b97d5;
+}
+div.job h2,
+div.job h3 {
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+}
+div.job div.outer {
+  margin-bottom: 20px;
+  *zoom: 1;
+  width: auto;
+  max-width: 920px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+div.job div.outer:before,
+div.job div.outer:after {
+  content: '';
+  display: table;
+}
+div.job div.outer:after {
+  clear: both;
+}
+div.job div.outer div.img {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 33.33333333333333%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+div.job div.outer div.img:before,
+div.job div.outer div.img:after {
+  content: '';
+  display: table;
+}
+div.job div.outer div.img:after {
+  clear: both;
+}
+div.job div.outer div.content {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 66.66666666666666%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: relative;
+  right: 12px;
+  top: 7px;
+}
+div.job div.outer div.content:before,
+div.job div.outer div.content:after {
+  content: '';
+  display: table;
+}
+div.job div.outer div.content:after {
+  clear: both;
+}
+div.job div.outer div.content h3 {
+  color: #fff;
+  font-family: "Myriad Pro";
+  font-size: 20px;
+  font-weight: 700;
+}
+div.job div.outer div.content p {
+  color: #fff;
+  font-family: "Myriad Pro";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+div.job div.outer div.icon {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 37.5%;
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 167px;
+  height: 160px;
+  background-color: #16253b;
+  background-image: -webkit-linear-gradient(120deg, #ffa300 0%, #ff8000 100%);
+  background-image: -moz-linear-gradient(120deg, #ffa300 0%, #ff8000 100%);
+  background-image: -o-linear-gradient(120deg, #ffa300 0%, #ff8000 100%);
+  background-image: -ms-linear-gradient(120deg, #ffa300 0%, #ff8000 100%);
+  background-image: linear-gradient(-30deg, #ffa300 0%, #ff8000 100%);
+  border: 3px solid #fff;
+  -webkit-box-shadow: inset 0 3px 4px #f48312;
+  box-shadow: inset 0 3px 4px #f48312;
+}
+div.job div.outer div.icon img {
+  margin: auto;
+}
+div.job div.outer div.icon:before,
+div.job div.outer div.icon:after {
+  content: '';
+  display: table;
+}
+div.job div.outer div.icon:after {
+  clear: both;
+}
+div.job div.outer div.text {
+  width: ;
+  height: 165px;
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 62.5%;
+  margin-left: 0%;
+  margin-right: 0%;
+  background-color: #095a88;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+div.job div.outer div.text:before,
+div.job div.outer div.text:after {
+  content: '';
+  display: table;
+}
+div.job div.outer div.text:after {
+  clear: both;
+}
+div.job button {
+  position: relative;
+  bottom: 10px;
+  *zoom: 1;
+  width: auto;
+  max-width: 960px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  width: 620px;
+  height: 41px;
+  background-color: #ff9600;
+  background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: -ms-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: linear-gradient(to top, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.96);
+  box-shadow: inset 0 -1px 1px rgba(255,255,255,0.96);
+  text-shadow: 0 1px 1px rgba(190,122,2,0.84);
+  color: #fff;
+  font-family: "Myriad Pro";
+  font-size: 20px;
+  font-weight: 700;
+}
+div.job button:before,
+div.job button:after {
+  content: '';
+  display: table;
+}
+div.job button:after {
+  clear: both;
+}
+div.case {
+  position: relative;
+  top: 35px;
+  width: ;
+  height: 725px;
+}
+div.case h2 {
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.71);
+  color: #095a88;
+  font-family: "Myriad Pro";
+  font-size: 48px;
+}
+div.case >div {
+  position: relative;
+  left: 165px;
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333333333333%;
+  margin-left: 0%;
+  margin-right: 3%;
+  margin-bottom: 15px;
+  width: 310px;
+  height: 267px;
+  background-color: #fff;
+  background-image: -webkit-linear-gradient(bottom, #2e83ca 0%, #2e83ca 100%);
+  background-image: -moz-linear-gradient(bottom, #2e83ca 0%, #2e83ca 100%);
+  background-image: -o-linear-gradient(bottom, #2e83ca 0%, #2e83ca 100%);
+  background-image: -ms-linear-gradient(bottom, #2e83ca 0%, #2e83ca 100%);
+  background-image: linear-gradient(to top, #2e83ca 0%, #2e83ca 100%);
+  -webkit-box-shadow: 0 1px 0 rgba(67,148,217,0.7), inset 0 1px 3px rgba(15,72,120,0.6), inset 0 0 0 rgba(94,101,114,0.1);
+  box-shadow: 0 1px 0 rgba(67,148,217,0.7), inset 0 1px 3px rgba(15,72,120,0.6), inset 0 0 0 rgba(94,101,114,0.1);
+}
+div.case >div:before,
+div.case >div:after {
+  content: '';
+  display: table;
+}
+div.case >div:after {
+  clear: both;
+}
+div.case >div:last-child {
+  margin-right: 0%;
+}
+div.case >div img {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+div.case >div div {
+  width: 300px;
+  height: 70px;
+  background-color: #ff9100;
+  position: relative;
+  bottom: 70px;
+  left: 5px;
+}
+div.case >div div p {
+  text-align: center;
+  position: relative;
+  top: 15px;
+  color: #fff;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  font-weight: 700;
+}
+div.comment {
+  width: ;
+  height: 520px;
+  background-color: #2b97d5;
+  background-image: url("comment-background.png");
+}
+div.comment >div {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: relative;
+  left: 60px;
+}
+div.comment >div:before,
+div.comment >div:after {
+  content: '';
+  display: table;
+}
+div.comment >div:after {
+  clear: both;
+}
+div.comment div.head {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+div.comment div.logo {
+  width: 114px;
+  height: 113px;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  background-color: #fff;
+  border: 2px solid #0d3251;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+div.comment div.logo img {
+  margin: auto;
+}
+div.comment div.text {
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  margin-left: 10px;
+  color: #fff;
+  font-family: "Myriad Pro";
+  font-size: 20px;
+  font-weight: 700;
+}
+div.comment div.text a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+div.comment div.text button {
+  color: #fff;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  font-weight: 400;
+  width: 246px;
+  height: 33px;
+  background-color: #fb8f00;
+  background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: -ms-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  background-image: linear-gradient(to top, rgba(0,0,0,0.18) 0%, rgba(255,255,255,0.18) 100%);
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.96);
+  box-shadow: inset 0 -1px 1px rgba(255,255,255,0.96);
+}
+div.comment div.content {
+  width: 500px;
+  height: auto;
+  background-color: #fff;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 4px 0 #d7d7d7;
+  box-shadow: 0 4px 0 #d7d7d7;
+  padding: 10px;
+  margin-top: 10px;
+}
+div.comment div.content p:nth-child(1) {
+  color: #363636;
+  font-family: "Myriad Pro";
+  font-size: 16px;
+  font-style: italic;
+}
+div.comment div.content p:nth-child(2) {
+  color: #2b97d5;
+  font-family: "Myriad Pro";
+  font-size: 16px;
+}
+div.comment div.head {
+  width: 114px;
+  height: 113px;
+}
+div.partners {
+  width: auto;
+  height: 300px;
+}
+div.partners h2 {
+  width: 331px;
+  height: 43px;
+  font-size: 48px;
+  color: #368ed1;
+  font-family: "Myriad Pro";
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+}
+div.partners div {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 22.75%;
+  margin-left: 0%;
+  margin-right: 3%;
+  position: relative;
+  top: 100px;
+  left: 50px;
+}
+div.partners div:before,
+div.partners div:after {
+  content: '';
+  display: table;
+}
+div.partners div:after {
+  clear: both;
+}
+div.partners div:last-child {
+  margin-right: 0%;
+}
+div.photo h2 {
+  color: #368ed1;
+  font-family: "Myriad Pro";
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+div.photo img {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 22.75%;
+  margin-left: 0%;
+  margin-right: 3%;
+  width: 230px;
+  height: 119px;
+  position: relative;
+  left: 120px;
+}
+div.photo img:before,
+div.photo img:after {
+  content: '';
+  display: table;
+}
+div.photo img:after {
+  clear: both;
+}
+div.photo img:last-child {
+  margin-right: 0%;
+}
+footer {
+  position: relative;
+  top: 30px;
+  width: auto;
+  height: 200px;
+}
+footer div {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333333333333%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+footer div:before,
+footer div:after {
+  content: '';
+  display: table;
+}
+footer div:after {
+  clear: both;
+}
+footer div:last-child {
+  margin-right: 0%;
+}
+footer div:nth-child(1) {
+  position: relative;
+  left: 120px;
+}
+footer div:nth-child(1) a {
+  color: #2b97d5;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+footer div:nth-child(2) h3 {
+  color: #ff8600;
+  font-family: "Myriad Pro";
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+footer div:nth-child(2) h4 {
+  color: #cdcdcd;
+  font-family: "Myriad Pro";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+footer div:nth-child(3) {
+  position: relative;
+  right: 190px;
+  text-align: right;
+  color: #2b97d5;
+  font-family: "Myriad Pro";
+  font-size: 24px;
+  font-weight: 700;
+}
+footer div:nth-child(3) p {
+  color: #000;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
