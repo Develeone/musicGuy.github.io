@@ -1,19 +1,46 @@
 @import 'jeet'
 @import 'nib'
-
+@import 'rupture'
 //edit()
 
+@font-face{
+  font-family: Myriad Pro; /* Имя шрифта */
+  src: url("./967639.ttf");
+}
+
+
+body
+  margin 0
+
 header
-  center(1280px)
-  margin-top 30px
-  img
-    col(1/4)
-    size 209px 85px
+  margin-top: 20px
+  display: flex
+  height auto
+  justify-content space-around
+  +below(750px)
+    flex-wrap wrap
+    flex-flow column
+    div
+      margin: auto 50%
+  div
+    margin auto
+
+  div:nth-child(1)
+    +above(751px)
+      margin-right: 0
+
   div:nth-child(2)
-    col(1/4)
+    text-align center
+    +below(750px)
+      margin 10px auto
+
+    +above(751px)
+      margin-left 10px
+      text-align left
     p
       font-size 36px
       line-height 30px
+      margin 0
     p:nth-child(1)
       color #363636
       font-family MyriadPro
@@ -28,9 +55,10 @@ header
 
 
   div:nth-child(3)
-    col(2/4, cycle: 4)
     p
       text-align: right
+      +below(750px)
+        text-align center !important
     p:nth-child(1)
       color #363636
       font-family "Myriad Pro"
@@ -42,69 +70,109 @@ header
       margin-top: 0
 
 
+
+
 nav
-  center(100%)
+  .menu
+    margin-right: 0
+    margin-bottom: 0
+    display none
+    +below(1000px)
+      display: block
+    
   background-color #2b97d5
+  min-height: 51px
   ul
-    list-style-type: none;
-    height: 51px;
+    position static!important
+    //height: 51px;
     margin: 0;
+    display: flex
+    justify-content space-around
+    +below(1000px)
+      flex-direction column
+      display none
+    +above(1000px)
+      display flex!important
+    flex-wrap wrap
+  a
+    background-color #2b97d5!important
+    text-decoration none
+    border 0 !important
   li
-    span(1/10)
-    text-align center
-    ///padding: 0.5em 1em
+    display: flex
+    a
+      +below(1000px)
+        font-size 30px!important
+      margin: auto
+      color white!important
+      font-family "Myriad Pro"
+      font-size 16px
+      font-weight 700
+      text-align center
+      text-shadow 0 1px 1px rgba(190, 122, 2, 0.84)
+  >button
+    width 51px
+  button
+    +below(1000px)
+      margin auto
+      font-size 30px
+      margin-bottom 10px
+    background-color #ff9500
+    height 51px
+    border: 0
     text-shadow 0 1px 1px rgba(190, 122, 2, 0.84)
     color white
     font-family "Myriad Pro"
     font-size 16px
     font-weight 700
-    size null 51px
-
-  li.order
-    span(2/10)
-    text-align center
-    background-color #ff9500
-    background-image linear-gradient(to top, rgba(0, 0, 0, 0.18) 0%, rgba(255, 255, 255, 0.18) 100%)
-    //size 224px 51px
-    display flex
-    margin: auto
 
 .ship
   background-color #343434
   background-image url("ship-background.png");
-  height 641px
+  min-height 641px
+  background-size cover
+  display flex
+  flex-flow: row wrap
+  flex-direction: column;
+  div
+    flex-shrink: 0
+    flex-grow 0
   >div:nth-child(1)
-    position: relative
-    top 100px
+    padding 10px
+    margin: auto
     background-color white
     border-radius 2px
-    center(920px)
     p
       color #2b97d5
       font-family "Myriad Pro"
       text-align center
   >div:nth-child(2)
-    center(920px)
-    position: relative
-    top: 150px
+    margin 10px auto
+    display flex
+    flex-flow: row wrap
+    div:nth-child(2)
+      min-width 150px
+      +below(445px)
+        margin-top 10px !important
 
-    >div:nth-child(1)
-      span(4/5)
-      size 560px 51px
+    text-align center
+    button
+      margin 10px auto
+      min-height 51px
+      max-width: 560px
       background-color #ff9600
       background-image linear-gradient(to top, rgba(0, 0, 0, 0.18) 0%, rgba(255, 255, 255, 0.18) 100%)
       border-radius 3px
       box-shadow inset 0 -1px 1px rgba(255, 255, 255, 0.96)
       text-align center
-      p
-        text-shadow 0 1px 1px rgba(190, 122, 2, 0.84)
-        color white
-        font-family "Myriad Pro"
-        //font-size 20px
-        font-weight 700
+      text-shadow 0 1px 1px rgba(190, 122, 2, 0.84)
+      color white
+      font-family "Myriad Pro"
+      font-size 20px
+      font-weight 700
 
     >div:nth-child(2)
-      span(1/5)
+      margin auto
       background-color #2b97d5
       background-image linear-gradient(to right, #238cc8 0%, #299ee1 100%)
       border 1px solid white
@@ -115,130 +183,213 @@ nav
         //font-size 20px
         font-weight 700
         margin: 5%
-      margin-top 7px
-  >div:nth-child(3)
-    opacity 0.7
-    position: relative
-    top 200px
-    background-color #238ecb
-    center(920px)
-    div
-      span(1/5)
-      border-right 1px soild #4580a3
-      img
-        margin-left 10px
-        margin-top 10px
-        margin-bottom 5px
-      p
-        margin-left 10px
-        margin-top 5px
-        margin-bottom 5px
 
-div.who
-  margin-top 40px
-  center(920px)
+  >div:nth-child(3)
+    display: flex
+    opacity 0.7
+    margin: auto
+    background-color #238ecb
+    flex-flow: row wrap
+    justify-content space-around
+    flex-shrink 0
+
+    div
+      border-right 1px soild #4580a3
+      //margin auto
+      display flex
+      flex-flow: column
+      flex-wrap wrap
+      margin: 10px 10px
+      img
+        margin auto
+      p
+        text-align center
+        color white
+        font-family "Myriad Pro"
+        font-size 16px
+        font-weight 400
+
+
+
+
+
+
+.who
+  height auto
+  +below(711px)
+    height 350px
   h3
     color #2b97d5
     font-family "Myriad Pro"
     font-size 24px
     font-weight 700
+    word-wrap break-word
+    +below(711px)
+      text-align center
+      margin auto
   p
     color #363636
     font-family "Myriad Pro"
     font-size 18px
     font-weight 400
-  div:first-child
-    col(2/9)
-  div:nth-child(2)
-    col(7/9)
+    word-wrap break-word
+    +below(711px)
+      text-align justify
+  display flex
+  //align-items stretch
+  justify-content center
+  align-content center
+  div
+    size 500px 102px
+    margin-left: 20px
+    +below(711px)
+      margin auto
 
-div.records
+  img
+    +below(711px)
+      margin auto
+    margin-top 10px
+    size 173px
+    +bellow(710px)
+      size 173px
+  +below(710px)
+    flex-flow: wrap
+    flex-direction column
+
+
+
+
+
+
+
+.records
   background-image url("records-background.png")
+  background-size cover
   background-color #0f5b86
+  min-height 569px
+  background-repeat no-repeat
+  background-position bottom
   h3
     color white
     font-size 48px
     text-align center
     position: relative
     top: 20px
-  section>div
-    size 231px 192px
-    display flex
-    background-color white
-    border-radius 15px
-    margin auto !important
-    div
-      size 218px 181px
-      background-color white
-      border 2px solid #2b97d5
-      border-radius 10px
-      margin: auto
-
-      
-  section
-    center(920px)
-    display flex
-  section.first-row>div
-    col(1/3)
-    size 231px 192px
-
-  section.second-row>div
-    col(1/2)
-    size 231px 192px
-  section.second-row
-    position: relative
-    bottom 10px
-    margin-top: 30px
-  img
-    margin-left: 65px;
-    margin-top: 20px;
+    font-family  Myriad Pro
+    font-size 48px
   p
     text-align center
     color #363636
-    font-family "Myriad Pro"
+    font-family Myriad Pro
     font-size 16px
     margin-top: 30px
+    font-weight 300
+  .second-row
+    >div:nth-child(2)
+      +below(462px)
+        margin-bottom 30px!important
+  section
+    display flex
+    align-content center
+    align-items center
+    justify-content space-around
+    flex-flow: row wrap
+    >div
+
+      margin 20px 10px
+      size 231px 192px
+      background-color white
+      border-radius 15px
+      display: flex
+      div
+        size 218px 181px
+        display flex
+        flex-flow: column
+        margin auto
+        background-color white
+        border 2px solid #2b97d5
+        border-radius 10px
+        img
+          flex-shrink 0
+          flex-grow 0
+          margin 10px auto 0
+          size 83px 77px
 
 
 
-div.why
-  center(960px)
+
+
+
+
+.why
   h3
     text-align center
     font-size 48px
+    font-family "Myriad Pro"
 
-  div
-    col(1/6, cycle: 7)
+  >div
+    size auto
+    display flex
+    justify-content space-around
+    flex-wrap: wrap
+    //flex-direction  column
+    div
+      +below(350px)
+        width 100%
+      flex-grow 0
+      flex-shrink 0
+      margin-right 10px
+      margin-left: 10px
+      display flex
+      flex-wrap: wrap
+      flex-direction column
+      img
+        flex-grow 0
+        flex-shrink 0
+        margin auto
     p
       text-align center
       color #363636
       font-family "Myriad Pro"
       font-size 18px
       font-weight 400
-    img
-      margin-left: 25px
+
+
 
   section
-    position: relative
-    top 30px
-    div
-      span(1/2)
+    display flex
+    justify-content center
+    flex-wrap wrap
+
+
+    div:nth-child(2)
+      margin-left 10px
+      size 500px auto
     p, h3
       text-align: left
       margin-top: 0
     h3
+      +below(910px)
+        text-align center
       margin-bottom: 10px
       color #363636
       font-family "Myriad Pro"
       font-size 24px
       font-weight 700
     p
+      +below(910px)
+        text-align justify
       color #363636
       font-family "Myriad Pro"
       font-size 18px
       font-weight 400
+    img
+      +below(500px)
+        flex-shrink 1
     button
-      size 495px 41px
+      +below(500px)
+        flex-shrink 1
+      //size 495px 41px
       background-color #ff9600
       background-image linear-gradient(to top, rgba(0, 0, 0, 0.18) 0%, rgba(255, 255, 255, 0.18) 100%)
       border-radius 3px
@@ -252,56 +403,89 @@ div.why
 
 
 
-div.job
-  position: relative
+.job
   background-image url('job-background.png')
-  top 30px
   background-color #2b97d5
+  width 100%
+  h2
+    margin-bottom 0
+  #do
+    color #2b97d5
+    background-color white
+    margin 10px auto 35px
+    padding 3px
+    width: 15%
+
   h2, h3
+    font-family "Myriad Pro"
     text-align center
+    position: relative
+    top 15px
     color: white
     margin-top 10px
-  div.outer
-    margin-bottom 20px
-    center(920px)
-    div.img
-      span(4/12)
-    div.content
-      span(8/12)
-      position: relative
-      right: 12px
-      top: 7px
+  .outer
+    width 100%
+    margin-bottom 10px
+    display: inline-flex
+    justify-content center
+    //flex-wrap  wrap
+    flex-shrink 0
+    flex-grow: 0
+    .img
+      flex-shrink 0
+      +below(650px)
+        display none
+    .icon
+      size 167px 160px
+      margin-top 7px
+      +below(750px)
+        display none
+      display: inline-flex
+      img
+        margin auto
+      background-color #16253b
+      background-image linear-gradient(-30deg, #ffa300 0%, #ff8000 100%)
+      border 3px solid white
+      box-shadow inset 0 3px 4px #f48312
+      flex-shrink 0
+    .text
+      margin-top 7px
+      height 166px
+      max-width 600px
+      width 100%
+      padding 0 10px
+      background-color #095a88
+      border-radius 4px
+      display flex
+      flex-wrap wrap
+      flex-direction
+      align-content: space-around
       h3
+        +below(650px)
+          text-align center
+          margin auto
         color white
         font-family "Myriad Pro"
         font-size 20px
         font-weight 700
       p
+        +below(650px)
+          text-align justify
         color white
         font-family "Myriad Pro"
         font-size 16px
         font-weight 400
-        text-align left
-    div.icon
-      display flex
-      img
-        margin: auto
-      span(3/8)
-      size 167px 160px
-      background-color #16253b
-      background-image linear-gradient(-30deg, #ffa300 0%, #ff8000 100%)
-      border 3px solid white
-      box-shadow inset 0 3px 4px #f48312
-    div.text
-      size null 165px
-      span(5/8)
-      background-color #095a88
-      border-radius 4px
+
+
   button
+    margin-top 10px
     position: relative
-    bottom 10px
-    center(960px)
-    size 620px 41px
+    bottom 5px
+    min-height 41px
+    display: flex
+    padding 5px 10px
+    margin auto
+    text-align center
     background-color #ff9600
     background-image linear-gradient(to top, rgba(0, 0, 0, 0.18) 0%, rgba(255, 255, 255, 0.18) 100%)
     border-radius 3px
@@ -315,62 +499,150 @@ div.job
 
 
 div.case
+  background-color #fafafa
+  padding-top 20px
   h2
     text-align center
     text-shadow 0 1px 0 rgba(255, 255, 255, 0.71)
     color #095a88
     font-family "Myriad Pro"
     font-size 48px
+    margin-top 0
+  min-height 725px
+  width 100%
 
-  position: relative
-  top: 35px
-  size null 725px
+  //size null 725px
   //background-color #fafafa
+  section
+    display flex
+    margin-bottom 20px
+    justify-content space-around
+    flex-wrap wrap
+    >div
+      margin 20px
+      padding: 5px
+      size 300px auto
+      background-color white
+      background-image linear-gradient(to top, #2e83ca 0%, #2e83ca 100%)
+      box-shadow 0 1px 0 rgba(67, 148, 217, 0.7), inset 0 1px 3px rgba(15, 72, 120, 0.6), inset 0 0 0 rgba(94, 101, 114, 0.1)
+      display flex
+      flex-shrink 0
+      flex-grow 0
+      flex-wrap wrap
+      flex-flow: column
+      height 100%
 
 
-  //center(1080px)
-  >div
-    position: relative
-    left: 165px
-    col(1/3)
-    margin-bottom 15px
-    size 310px 267px
-    background-color white
-    background-image linear-gradient(to top, #2e83ca 0%, #2e83ca 100%)
-    box-shadow 0 1px 0 rgba(67, 148, 217, 0.7), inset 0 1px 3px rgba(15, 72, 120, 0.6), inset 0 0 0 rgba(94, 101, 114, 0.1)
-    img
-      margin-left: 5px
-      margin-top: 5px
+      >div:nth-child(1):hover .overlay {
+        opacity:1;
+      }
+
+
+
+      >div:nth-child(1)
+        size 100% 205px
+        div
+          background:rgba(0,0,0,.75);
+          size 300px 205px
+          text-align:center;
+          opacity:0;
+          -webkit-transition: opacity .25s ease;
+          -moz-transition: opacity .25s ease;
+          display flex
+          button
+            margin auto
+            size 143px 41px
+            background-color #ff9600
+            background-image linear-gradient(to top, rgba(0, 0, 0, 0.18) 0%, rgba(255, 255, 255, 0.18) 100%)
+            border-radius 3px
+            box-shadow inset 0 -1px 1px rgba(255, 255, 255, 0.96)
+            text-shadow 0 1px 1px rgba(190, 122, 2, 0.84)
+            color white
+            font-family "Myriad Pro"
+            font-size 20px
+            font-weight 700
+
+
+
+
+      >div:nth-child(2)
+        size 100% 70px
+        background-color #ff9100
+        p
+          text-align: center;
+          color white
+          font-family "Myriad Pro"
+          font-size 18px
+          font-weight 700
+
+
+
+
+
+
+.schema
+  h4
+    text-align center
+    color #fb8f00
+    font-family "Myriad Pro"
+    font-size 24px
+    font-weight 700
+  h2
+    text-align center
+    font-size 48px
+    font-family "Myriad Pro"
+
+  section
+
+    height auto
+    display flex
+    justify-content space-around
+    flex-wrap wrap
+    h3, p
+      margin-left 26px
+      margin-top 5px
+      margin-bottom:  0
+    h3
+      color #368ed1
+      font-family "Myriad Pro"
+      font-size 24px
+      font-weight 700
+    p
+      color #363636
+      font-family "Myriad Pro"
+      font-size 18px
+      font-weight 400
     div
-      size 300px 70px
-      background-color #ff9100
-      position: relative
-      bottom 70px
-      left 5px
-      p
-        text-align: center;
-        position: relative;
-        top: 15px;
-        color white
-        font-family "Myriad Pro"
-        font-size 18px
-        font-weight 700
-
-
+      margin 10px
 
 
 
 div.comment
-  >div
-    span(1/2)
+  h2
+    text-align center
+    color white
+    font-size 48px
     position: relative
-    left: 60px
+    top 15px
+    font-family Myriad Pro
 
-  size null 520px
+  size 100%
+  min-height 500px
+  background-size cover
   background-color #2b97d5
   background-image url('comment-background.png')
+  section
+    display: flex
+    flex-wrap wrap
+    justify-content center
+
+  div.item
+    max-width 500px
+    margin: auto
   div.head
     display: flex
+    //flex-wrap wrap
+    //flex-direction row
   div.logo
     size 114px 113px
     flex-shrink 0
@@ -383,6 +655,7 @@ div.comment
   div.text
     flex-shrink 0
     margin-left: 10px
+    word-wrap break-word
     color white
     font-family "Myriad Pro"
     font-size 20px
@@ -396,13 +669,13 @@ div.comment
       font-family "Myriad Pro"
       font-size 18px
       font-weight 400
-      size 246px 33px
+      //size 246px 33px
       background-color #fb8f00
       background-image linear-gradient(to top, rgba(0, 0, 0, 0.18) 0%, rgba(255, 255, 255, 0.18) 100%)
       border-radius 4px
       box-shadow inset 0 -1px 1px rgba(255, 255, 255, 0.96)
   div.content
-    size 500px auto
+    size 100% auto
     background-color white
     border-radius 4px
     box-shadow 0 4px 0 #d7d7d7
@@ -419,24 +692,59 @@ div.comment
       font-size 16px
   div.head
     size 114px 113px
+  li
+    display: flex
+  div.bx-controls-direction
+    +below(715px)
+      margin 10px 0
+    display: flex
+    justify-content center
+    +above(715px)
+      position: relative
+      bottom: 200px
+    a:first-child
+      +above(715px)
+        margin-right 600px
+      +below(715px)
+        margin-right 5px
 
 
 
 div.partners
-  size auto 300px
+  size 100% auto
+  padding 20px 0
+  min-height 210px
+  align-content space-between
   h2
-    size 331px 43px
     font-size 48px
     color #368ed1
     font-family "Myriad Pro"
     text-align center
-    margin auto
     margin-top 10px
-  div
-    col(1/4)
-    position: relative
-    top: 100px
-    left: 50px
+    margin-bottom 0
+  section
+    height auto
+    margin auto
+    display flex
+    justify-content space-around
+    flex-grow: 0
+    flex-shrink: 0
+    +below(825px)
+      flex-wrap: wrap
+      flex-direction row
+    >div
+      margin auto
+      margin-right 10px
+      margin-left 10px
+      +below(375px)
+        margin-bottom 10px
+
+      max-height 109px
+
+
+
+
+
 
 div.photo
   h2
@@ -446,18 +754,29 @@ div.photo
     font-weight 700
     text-align: center
   img
-    col(1/4)
     size 230px 119px
-    position: relative
-    left: 120px
+    margin-top 10px
+    margin-right 10px
+    margin-left 10px
+  section
+    display flex
+    justify-content space-around
+    flex-direction row
+    flex-wrap wrap
 
 
 footer
+  +below(493px)
+    text-align center!important
   position: relative
   top: 30px
-  size auto 200px
+  size auto
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  justify-content space-around
   div
-    col(1/3)
+    margin 0 10px
 
   div:nth-child(1)
     
@@ -467,9 +786,10 @@ footer
       font-size 18px
       font-weight 400
       text-decoration underline
-    position: relative
-    left: 120px
+
   div:nth-child(2)
+    +below(879px)
+      order 1
     h3
       color #ff8600
       font-family "Myriad Pro"
@@ -486,8 +806,8 @@ footer
       margin 0
 
   div:nth-child(3)
-    position: relative
-    right: 190px
+    +below(493px)
+      text-align center
     text-align right
     color #2b97d5
     font-family "Myriad Pro"
@@ -499,3 +819,190 @@ footer
       font-size 18px
       font-weight 400
       margin 0
+
+
+.casecase
+  width 96%!important
+  padding 0!important
+  border-radius 0!important
+  background-color: white!important
+  box-shadow: 0 0 0 0 !important
+  .img
+    size 389px 479px!important
+    min-width 389px
+    +below(1000px)
+      display: none
+  .outer
+    display: flex
+    //flex-wrap: nowrap
+  h2
+    color black
+    +below(1000px)
+      text-align: center
+    font-family "Myriad Pro"
+    font-size 20px
+    font-weight 700
+    text-align left
+    margin-left: 20px
+  .icon
+    +below(1000px)
+      justify-content center
+    display: flex
+    justify-content flex-start
+    margin-left 20px
+    img
+      margin-right 20
+      flex-shrink 0
+      flex-grow: 0
+    h3
+      color black
+      font-family "Myriad Pro"
+      font-size 18px
+      font-weight 400
+      margin-left 15px
+  .grid
+    img
+      flex-shrink 0
+      flex-grow: 0
+      size 44px 54px
+    display: flex
+    +below(450px)
+      flex-direction column
+    justify-content center
+    h4
+      margin 0
+      +below(450px)
+        text-align center
+    div
+      +below(450px)
+        margin: auto
+        padding: 5px
+      padding 20px
+      margin-right: 25px
+    div:nth-child(2)
+      display: flex
+      h4
+        padding: 1em
+  .result
+    display: flex
+    h5
+      color white
+      background-color #2b97d5
+      font-family "Myriad Pro"
+      font-size 20px!important
+      font-weight 400
+      margin: auto
+      padding 10px
+  h4
+    color black
+    font-family "Myriad Pro"
+    font-size 16px
+    font-weight 400
+  p
+    margin 20px
+    color black
+    font-family "Myriad Pro"
+    font-size 16px
+    font-style italic
+  button
+    background-color #ff9600
+    background-image linear-gradient(to top, rgba(0, 0, 0, 0.18) 0%, rgba(255, 255, 255, 0.18) 100%)
+    border-radius 3px
+    box-shadow inset 0 -1px 1px rgba(255, 255, 255, 0.96)
+    text-shadow 0 1px 1px rgba(190, 122, 2, 0.84)
+    color white
+    font-family "Myriad Pro"
+    font-size 16px
+    font-weight 700
+    display: flex
+    margin auto
+    height 41px
+    margin-bottom 15px
+  .border
+    border-top 4px solid #ff9b00
+    border-bottom 4px solid #ff9b00
+    margin: 20px
+    padding-bottom: 15px
+  .box-modal_close
+    img
+      +below(1000px)
+        position: relative
+        bottom: 70px
+        left: 10px
+      background-color #ff9b00
+      padding 15px
+
+
+#form
+  -webkit-border-radius: 4px!important
+  -moz-border-radius: 4px!important
+  padding: 0
+  border-radius: 4px!important
+  background-color white
+  max-width 500px
+  box-shadow: 0 0 0 0
+  .header
+    padding: 20px
+    display: flex
+    justify-content center
+    img
+      margin-right 20px
+      margin-bottom auto
+      margin-top: auto
+      size 138px 56px
+    h3
+      font-size 24px
+      font-family MyriadPro
+  .body
+    background-color #2b97d5
+    padding: 20px
+    h2
+      text-align center
+      color white
+      font-family "Myriad Pro"
+      font-size 24px
+      line-height: 1.5
+    input
+      width 100%
+      height 41px
+      margin-bottom 10px
+      font-size 20px
+    textarea::-webkit-input-placeholder
+      font-family "Myriad Pro"
+      font-size 20px
+      font-weight 400
+      color #323232
+      padding: 5px
+    input::-webkit-input-placeholder
+      font-family "Myriad Pro"
+      font-size 20px
+      font-weight 400
+      color #323232
+      padding: 5px
+    textarea
+      height 91px
+      width 100%
+      resize: none
+      font-size 20px
+
+  button
+    background-color #ff9600
+    background-image linear-gradient(to top, rgba(0, 0, 0, 0.18) 0%, rgba(255, 255, 255, 0.18) 100%)
+    border-radius 3px
+    box-shadow inset 0 -1px 1px rgba(255, 255, 255, 0.96)
+    size auto 41px
+    display: flex
+    margin auto
+    text-align center
+    color white
+    font-family "Myriad Pro"
+    font-size 18px
+    font-weight 700
+    text-transform uppercase
+  .footer
+    display: flex
+    justify-content flex-start
+    img
+      size 21px 25px
+      margin auto
+      margin-right 5px
