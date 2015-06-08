@@ -215,10 +215,9 @@ nav
 
 
 .who
-  height auto
-  +below(711px)
-    height 350px
+  margin-top 20px
   h3
+    margin 20px auto 0!important
     color #2b97d5
     font-family "Myriad Pro"
     font-size 24px
@@ -232,7 +231,6 @@ nav
     font-family "Myriad Pro"
     font-size 18px
     font-weight 400
-    word-wrap break-word
     +below(711px)
       text-align justify
   display flex
@@ -240,7 +238,9 @@ nav
   justify-content center
   align-content center
   div
-    size 500px 102px
+    //size 500px 102px
+    max-width 500px
+    min-height 102px
     margin-left: 20px
     +below(711px)
       margin auto
@@ -934,12 +934,12 @@ footer
 
 
 #form
+  width 90%!important
   -webkit-border-radius: 4px!important
   -moz-border-radius: 4px!important
   padding: 0
   border-radius: 4px!important
   background-color white
-  max-width 500px
   box-shadow: 0 0 0 0
   .header
     padding: 20px

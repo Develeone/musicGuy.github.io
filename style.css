@@ -384,7 +384,7 @@ nav button {
   font-weight: 400;
 }
 .who {
-  height: auto;
+  margin-top: 20px;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -401,12 +401,8 @@ nav button {
   -webkit-align-content: center;
   align-content: center;
 }
-@media only screen and (max-width: 711px) {
-  .who {
-    height: 350px;
-  }
-}
 .who h3 {
+  margin: 20px auto 0 !important;
   color: #2b97d5;
   font-family: "Myriad Pro";
   font-size: 24px;
@@ -424,7 +420,6 @@ nav button {
   font-family: "Myriad Pro";
   font-size: 18px;
   font-weight: 400;
-  word-wrap: break-word;
 }
 @media only screen and (max-width: 711px) {
   .who p {
@@ -432,8 +427,8 @@ nav button {
   }
 }
 .who div {
-  width: 500px;
-  height: 102px;
+  max-width: 500px;
+  min-height: 102px;
   margin-left: 20px;
 }
 @media only screen and (max-width: 711px) {
@@ -1692,13 +1687,13 @@ footer div:nth-child(3) p {
   }
 }
 #form {
+  width: 90% !important;
   -webkit-border-radius: 4px !important;
   -moz-border-radius: 4px !important;
   padding: 0;
   -webkit-border-radius: 4px !important;
   border-radius: 4px !important;
   background-color: #fff;
-  max-width: 500px;
   -webkit-box-shadow: 0 0 0 0;
   box-shadow: 0 0 0 0;
 }
