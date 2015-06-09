@@ -12,12 +12,15 @@
 body
   margin 0
 
+button:hover
+  cursor pointer
+
 header
   margin-top: 20px
   display: flex
   height auto
   justify-content space-around
-  +below(750px)
+  +below(800px)
     flex-wrap wrap
     flex-flow column
     div
@@ -26,24 +29,26 @@ header
     margin auto
 
   div:nth-child(1)
-    +above(751px)
+    +above(801px)
+      margin-left 50px
       margin-right: 0
 
   div:nth-child(2)
     text-align center
-    +below(750px)
+    +below(800px)
       margin 10px auto
 
-    +above(751px)
+    +above(801px)
       margin-left 10px
       text-align left
     p
+      font-family Myriad Pro
       font-size 36px
       line-height 30px
       margin 0
     p:nth-child(1)
       color #363636
-      font-family MyriadPro
+      font-family Myriad Pro
       font-weight 300
       margin-top 0
       margin-bottom 0
@@ -55,9 +60,12 @@ header
 
 
   div:nth-child(3)
+    margin-right 5px
+    +below(800px)
+      margin auto
     p
       text-align: right
-      +below(750px)
+      +below(800px)
         text-align center !important
     p:nth-child(1)
       color #363636
@@ -87,7 +95,7 @@ nav
     //height: 51px;
     margin: 0;
     display: flex
-    justify-content space-around
+    justify-content space-between
     +below(1000px)
       flex-direction column
       display none
@@ -175,8 +183,12 @@ nav
       margin auto
       background-color #2b97d5
       background-image linear-gradient(to right, #238cc8 0%, #299ee1 100%)
-      border 1px solid white
+      border-right  1px solid white
+      border-top  1px solid white
+      border-bottom 1px solid white
       border-radius 2px
+      +below(537px)
+        border-left 1px solid white
       p
         color white
         font-family "Myriad Pro"
@@ -186,7 +198,7 @@ nav
 
   >div:nth-child(3)
     display: flex
-    opacity 0.7
+    opacity 1
     margin: auto
     background-color #238ecb
     flex-flow: row wrap
@@ -292,7 +304,7 @@ nav
     display flex
     align-content center
     align-items center
-    justify-content space-around
+    justify-content center
     flex-flow: row wrap
     >div
 
@@ -330,7 +342,7 @@ nav
   >div
     size auto
     display flex
-    justify-content space-around
+    justify-content center
     flex-wrap: wrap
     //flex-direction  column
     div
@@ -412,11 +424,7 @@ nav
   h2
     margin-bottom 0
   #do
-    color #2b97d5
-    background-color white
-    margin 10px auto 35px
-    padding 3px
-    width: 15%
+    color  white
 
   h2, h3
     font-family "Myriad Pro"
@@ -537,6 +545,7 @@ div.case
 
       >div:nth-child(1):hover .overlay {
         opacity:1;
+        cursor pointer
       }
 
 
@@ -678,6 +687,7 @@ div.comment
       box-shadow inset 0 -1px 1px rgba(255, 255, 255, 0.96)
   div.content
     size 100% auto
+    min-height: 100%
     background-color white
     border-radius 4px
     box-shadow 0 4px 0 #d7d7d7
@@ -703,7 +713,7 @@ div.comment
     justify-content center
     +above(715px)
       position: relative
-      bottom: 200px
+      bottom: 300px
     a:first-child
       +above(715px)
         margin-right 600px
@@ -743,9 +753,39 @@ div.partners
 
       max-height 109px
 
-
-
-
+.contacts
+  display: flex
+  >div
+    margin 20px auto 10px
+    .header
+      background-color #095a88
+      min-width: 319px
+      min-height: 143px
+      display: flex
+      div
+        margin: auto
+        display: flex
+        min-width: 309px
+        min-height: 133px
+        border 2px solid white
+        h2
+          margin auto
+          color white
+          font-family "Myriad Pro"
+          font-size 48px
+          font-weight 700
+    .body
+      max-width: 319px
+      padding: 10px
+      margin-top 10px
+      //min-height: 233px
+      background-color #2b97d5
+      p
+        color white
+        font-family "Myriad Pro"
+        font-size 18px
+        font-weight 400
+        border-bottom 1px solid
 
 
 div.photo
