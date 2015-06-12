@@ -1092,18 +1092,23 @@ footer
 .thank
   background-image url("action-bg.png")
   height 500px
-  background-size contain
+  background-size cover
   background-repeat no-repeat
   display: flex
+
 
   >div
     display: flex
     opacity 1
     margin: auto auto 0 auto
     background-color #238ecb
-    flex-flow: row wrap
     justify-content space-around
     flex-shrink 0
+    flex-flow row
+    flex-wrap: wrap
+    +above(1000px)
+      position: relative
+      top 50px
 
     div
       border-right 1px soild #4580a3

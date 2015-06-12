@@ -1963,9 +1963,9 @@ footer div:nth-child(3) p {
 .thank {
   background-image: url("action-bg.png");
   height: 500px;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   display: -webkit-box;
   display: -moz-box;
@@ -1986,15 +1986,6 @@ footer div:nth-child(3) p {
   filter: none;
   margin: auto auto 0 auto;
   background-color: #238ecb;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  -o-box-orient: horizontal;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
   -webkit-box-pack: distribute;
   -moz-box-pack: distribute;
   -o-box-pack: distribute;
@@ -2003,6 +1994,24 @@ footer div:nth-child(3) p {
   justify-content: space-around;
   -webkit-flex-shrink: 0;
   flex-shrink: 0;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 1000px) {
+  .thank >div {
+    position: relative;
+    top: 50px;
+  }
 }
 .thank >div div {
   border-right: 1px soild #4580a3;
