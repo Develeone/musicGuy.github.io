@@ -1,9 +1,6 @@
 /**
  * Created by epl on 06.06.15.
  */
-$(".menu").click(function(){
-    $('nav>ul').toggle('slow');
-});
 
 $(document).ready(function(){
     $('.bxslider').bxSlider({
@@ -11,7 +8,9 @@ $(document).ready(function(){
         nextText: '<img src="right.png">',
         prevText: '<img src="left.png">'
     });
-
+    $(".menu").click(function(){
+        $('nav>ul').toggle('slow');
+    });
 
     $('#case-1-bt').click(function(){
         $("#case-1").arcticmodal();
@@ -39,6 +38,29 @@ $(document).ready(function(){
 
     $('.bill').click(function(){
         $("#form").arcticmodal();
+    });
+
+
+    $(".tabs").lightTabs();
+
+    $('#politics-btn').click(function(){
+        $("#politics").arcticmodal();
+    });
+
+    $("#photo section>div:nth-child(1)").click(function(){
+        $("#photo1").arcticmodal();
+    });
+
+    $("#photo section>div:nth-child(2)").click(function(){
+        $("#photo2").arcticmodal();
+    });
+
+    $("#photo section>div:nth-child(3)").click(function(){
+        $("#photo3").arcticmodal();
+    });
+
+    $("#photo section>div:nth-child(4)").click(function(){
+        $("#photo4").arcticmodal();
     });
 
     /*

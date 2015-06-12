@@ -20,25 +20,25 @@
         </div>
         <div>
             <p>Звонки по России бесплатны</p>
-            <p>8 (800) <span>500-08-37</span></p>
+            <a href="tel:+78005000837">8 (800) <span style="color:rgb(43, 151, 213);font-weight:700;">500-08-37</span></a>
         </div>
     </header>
     <nav>
         <button class="menu"><img src="icon-menu.svg"></button>
         <ul>
-            <li><a href="#">О компании</a></li>
-            <li><a href="#">Почему мы?</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Схема работы</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#container">О компании</a></li>
+            <li><a href="#why">Почему мы?</a></li>
+            <li><a href="#job">Услуги</a></li>
+            <li><a href="#case">Каталог</a></li>
+            <li><a href="#schema">Схема работы</a></li>
+            <li><a href="#comment">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
             <li><button class="bill">Заказать расчет стоимости</button></li>
         </ul>
     </nav>
 
 
-    <div class="ship">
+    <div class="ship" id="container">
         <div>
             <p>
                 <span style="font-size: 60px; font-weight: 700">Доставка груза из Китая</span><br>
@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    <div class="who">
+    <div class="who" id="who">
         <img src="3-layers.png">
         <div>
             <H3>Транспортная компания "Что - Куда"</H3>
@@ -74,7 +74,7 @@
         </div>
     </div>
 
-    <div class="records">
+    <div class="records" id="records">
         <h3><span style="font-weight: 300"> Наши </span> <span style="font-weight: 700">показатели</span></h3>
         <section class="first-row">
           <div>
@@ -112,54 +112,108 @@
             </section>
     </div>
 
-    <div class="why">
-      <h3><span style="font-weight: 300!important; color:#363636">Почему клиенты</span>
-          <span style="color: #2b97d5; font-weight: 700">выбирают нас?</span>
-      </h3>
-      <div>
-        <div>
-            <img src="why1.png" style="margin-top: 15px">
-            <p>Отслеживание<br>груза</p>
-        </div>
-        <div>
-            <img src="why2.png">
-            <p>Представительство<br> в Китае</p>
-        </div>
-        <div>
-            <img src="why3.png">
-            <p>Страхование<br>имущества</p>
-        </div>
-        <div>
-            <img src="why4.png">
-            <p>Ежедневное<br>информирование</p>
-        </div>
-        <div>
-            <img src="why5.png">
-            <p>Таможенное<br> оформление</p>
-        </div>
-        <div>
-            <img src="why6.png">
-            <p>"Прозрачная"<br>цена</p>
-        </div>
-      </div>
-        <section>
-            <div>
-                <img src="cash.png">
-            </div>
-            <div>
-                <h3>Держим руку на пульсе!</h3>
-                <p>Мы понимаем, как важно для вас быть уверенным в честности компании, с которой вы
-                    работаете, поэтому цена за транспортировку включает в себя все необходимые услуги,
-                    прописанные в договоре.  Никаких доплат и сюрпризов при  передачи груза вам "в руки".</p>
-                <button class="bill">
-                    Отправить заявку на расчет стоимости доставки
-                </button>
-            </div>
-        </section>
+    <div class="why" id="why">
+        <h3>Почему клиенты <span style="color:rgb(43, 151, 213); font-weight: 700"> выбирают нас ?</span></h3>
+        <div class="tabs">
+            <ul>
+                <li>
+                    <img src="why1.png">
+                    <p>Отслеживание<br>груза</p>
+                </li>
+                <li>
+                    <img src="why2.png">
+                    <p>Представительство<br> в Китае</p>
+                </li>
+                <li>
+                    <img src="why3.png">
+                    <p>Страхование<br>имущества</p>
+                </li>
+                <li>
+                    <img src="why4.png">
+                    <p>Ежедневное<br>информирование</p>
+                </li>
+                <li>
+                    <img src="why5.png">
+                    <p>Таможенное<br> оформление</p>
+                </li>
+                <li>
+                    <img src="why6.png">
+                    <p>"Прозрачная"<br>цена</p>
+                </li>
+            </ul>
+            <div class="items">
 
+                <div>
+                    <div class="icon"><img src="why-1.png"></div>
+                    <div class="content">
+                        <h3>Отслеживание груза</h3>
+                        <p> Нам важно следить за каждым этапом транспортировки из Китая в Россию, поэтому мы
+                            знаем где находится ваш груз в данную секунду 24 часа в сутки, что позволяет
+                            максимально обеспечить его сохранность от завода до вашей двери.</p>
+                        <button class="bill">Отправить заявку на расчет стоимости доставки</button>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="icon"><img src="why-2.png" alt=""/></div>
+                    <div class="content">
+                        <h3>Представительство в Китае</h3>
+                        <p> Имея своих людей на территории КНР, у нас есть возможность решать все вопросы здесь и
+                            сейчас. Наши сотрудники готовы помочь вам в любой ситуации. Работая оперативно, мы
+                            доставим ваш груз точно в срок, тем самым сохраним ваше время.</p>
+                        <button class="bill">Отправить заявку на расчет стоимости доставки</button>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="icon"><img src="why-3.png" alt=""/></div>
+                    <div class="content">
+                        <h3>Страхования имущества</h3>
+                        <p>Взяв на себя полную материальную ответственность за груз, мы  освобождаем вас от
+                            лишних переживаний и волнений. Обеспечение надежной доставки груза до места
+                            назначения - наша работа.</p>
+                        <button class="bill">Отправить заявку на расчет стоимости доставки</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon"><img src="why-4.png" alt=""/></div>
+                    <div class="content">
+                        <h3>Ежедневное информирование</h3>
+                        <p>Мы всегда знаем, где находится Ваш груз.
+                            Мы знаем, на каком корабле он путешествует,
+                            в каком контейнере он расположился, и насколько комфортно ему там.
+                            Зная все это, было бы неправильно не рассказать об этом Вам.
+                            Мы можем уведомлять Вас, используя современные технологии </p>
+                        <button class="bill">Отправить заявку на расчет стоимости доставки</button>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="icon"><img src="why-5.png" alt=""/></div>
+                    <div class="content">
+                        <h3>Таможенное оформление</h3>
+                        <p>Мы стремимся создать максимально комфортные условия для работы с нами, поэтому
+                            готовив все необходимые документы для обеспечения беспрепятственного ввоза груза на
+                            территорию России.</p>
+                        <button class="bill">Отправить заявку на расчет стоимости доставки</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon"><img src="why-6.png" alt=""/></div>
+                    <div class="content">
+                        <h3>Прозрачная цена</h3>
+                        <p>Мы понимаем, как важно для вас быть уверенным в честности компании, с которой вы
+                            работаете, поэтому цена за транспортировку включает в себя все необходимые услуги,
+                            прописанные в договоре.  Никаких доплат и сюрпризов при  передачи груза вам "в руки".</p>
+                        <button class="bill">Отправить заявку на расчет стоимости доставки</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 
-    <div class="job">
+    <div class="job" id="job">
     <h2>Работа, приносящая результат</h2>
     <h3 id="do">Наши услуги :</h3>
 
@@ -220,7 +274,7 @@
 
 </div>
 
-  <div class="case">
+  <div class="case" id="case">
     <h2>Интересные грузы, которые мы привезли</h2>
     <section>
         <div>
@@ -291,7 +345,7 @@
     </section>
 </div>
 
-    <div class="schema">
+    <div class="schema" id="schema">
         <h2><span style="
             color: #2b97d5;
             font-weight: 700">Схема </span>
@@ -348,7 +402,7 @@
     </div>
 
 
-    <div class="comment">
+    <div class="comment" id="comment">
         <h2>Отзывы клиентов</h2>
         <section>
 
@@ -361,8 +415,8 @@
                             </div>
                             <div class="text">
                                 Группа компаний “Континент”<br>
-                                <a href="#">http://kontinent.info</a><br>
-                                <button>Рекомендательное письмо</button>
+                                <a href="http://kontinent.info">http://kontinent.info</a><br>
+                                <button type="reset" onclick="location.href='continent.pdf'">Рекомендательное письмо</button>
                             </div>
                         </div>
                         <div class="content">
@@ -384,8 +438,8 @@
                             </div>
                             <div class="text">
                                 ООО ТЛК Кедр<br>
-                                <a href="#">http://www.tk-kedr.ru/</a><br>
-                                <button>Рекомендательное письмо</button>
+                                <a href="http://www.tk-kedr.ru">http://www.tk-kedr.ru</a><br>
+                                <button type="reset" onclick="location.href='kedr.pdf'">Рекомендательное письмо</button>
                             </div>
                         </div>
                         <div class="content">
@@ -404,8 +458,7 @@
                             </div>
                             <div class="text">
                                 ООО "ПортЭкспресс-ДВ"<br>
-                                <a href="#">http://www.tk-kedr.ru/</a><br>
-                                <button>Рекомендательное письмо</button>
+                                <button type="reset" onclick="location.href='post.pdf'">Рекомендательное письмо</button>
                             </div>
                         </div>
                         <div class="content">
@@ -426,8 +479,8 @@
                             </div>
                             <div class="text">
                                 ooo "Эльдopaдo" <br>
-                                <a href="#">http://www.tk-kedr.ru/</a><br>
-                                <button>Рекомендательное письмо</button>
+                                <a href="http://www.eldorado.ru/">http://www.eldorado.ru</a><br>
+                                <button type="reset" onclick="location.href='eldorado.pdf'">Рекомендательное письмо</button>
                             </div>
                         </div>
                         <div class="content">
@@ -448,7 +501,7 @@
     </section>
     </div>
 
-    <div class="partners">
+    <div class="partners" id="partners">
         <h2>Наши партнеры</h2>
         <section>
         <div>
@@ -465,48 +518,48 @@
         </div></section>
     </div>
 
-    <div class="map">
+    <div id="contacts">
         <a class="dg-widget-link" href="http://2gis.ru/vladivostok/firm/3518966490216026/center/131.92940000000002,43.095865000000025/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Владивостока</a><div class="dg-widget-link"><a href="http://2gis.ru/vladivostok/center/131.9294,43.095865/zoom/16/routeTab/rsType/bus/to/131.9294,43.095865╎Что-Куда, служба по доставке и перевозке грузов?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Что-Куда, служба по доставке и перевозке грузов</a></div><script charset="utf-8" src="http://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":"100%","height":600,"borderColor":"#a3a3a3","pos":{"lat":43.095865000000025,"lon":131.92940000000002,"zoom":16},"opt":{"city":"vladivostok"},"org":[{"id":"3518966490216026"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
     </div>
 
-    <div class="contacts">
-       <div>
-        <div class="header">
-            <div>
-                <h2>Контакты:</h2>
-            </div>
-        </div>
-        <div class="body">
-            <p>Транспортная компания "Что - Куда"</p>
-            <p>Владивосток, Слуцкого 5А</p>
-            <p>6900099</p>
-            <p>info@chto-kuda.ru</p>
-            <p>8 (800) 500-08-37</p>
-        </div>
-           </div>
-    </div>
 
-
-    <div class="photo">
+    <div class="photo" id="photo">
         <h2>Фотографии офиса</h2>
         <section>
-        <img src="p1.png">
-        <img src="p2.png" alt=""/>
-        <img src="p3.png" alt=""/>
-        <img src="p4.png" alt=""/></section>
+            <div style="background-image: url('p1.png')">
+                <div class="overlay">
+                    <img src="zoom.png">
+                </div>
+            </div>
+            <div style="background-image: url('p2.png')">
+                <div class="overlay">
+                    <img src="zoom.png">
+                </div>
+            </div>
+            <div style="background-image: url('p3.png')">
+                <div class="overlay">
+                    <img src="zoom.png">
+                </div>
+            </div>
+            <div style="background-image: url('p4.png')">
+                <div class="overlay">
+                    <img src="zoom.png">
+                </div>
+            </div>
+        </section>
     </div>
 
-    <footer>
+    <footer id="footer">
         <div>
-            <a href="#">Главный сайт "Что-Куда"</a><br>
-            <a href="#">Политика конфидециальности</a>
+            <a href="http://chto-kuda.ru/">Главный сайт "Что-Куда"</a><br>
+            <a id="politics-btn">Политика конфидециальности</a>
         </div>
         <div>
             <h3>Доставка грузов и товаров из Китая</h3>
             <h4>Транспортная компания "Что - Куда", 2015</h4>
         </div>
         <div>
-            8 (800) 500-08-37
+            <a href="tel:+78005000837">8 (800) 500-08-37</a>
             <p>Звонки по России бесплатны</p>
         </div>
     </footer>
@@ -761,7 +814,9 @@
 
     <div style="display: none;">
         <div class="box-modal" id="form">
-
+            <div class="box-modal_close arcticmodal-close">
+                <img src="close.png">
+            </div>
             <div class="outer">
                 <div class="header">
                     <img src="label.png">
@@ -779,23 +834,106 @@
                         <input type="text" placeholder="Ваше имя*">
                         <input type="tel" placeholder="Ваш телефон*">
                         <input type="email" placeholder="Ваш e-mail* (сюда мы отправим данные)">
-                        <textarea type="text" placeholder="Расскажите о товаре, который вы желаете привезти - это поможет ускорить расчет"></textarea>
+                        <textarea placeholder="Расскажите о товаре, который вы желаете привезти - это поможет ускорить расчет"></textarea>
                         <button type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
                     </form>
                     <div class="footer">
                         <img src="lock.png">
-                        <h4>Ваши данные в безопасности и не будут переданы третьим лицам</h4>
+                        <h4>Ваши данные в безопасности<br> и не будут переданы третьим лицам</h4>
                     </div>
 
                 </div>
             </div>
+        </div>
+    </div>
 
-    </div></div>
 
 
+    <div style="display: none">
+        <div class="box-modal casecase" id="photo1">
+            <div class="box-modal_close arcticmodal-close">
+                <img src="close.png">
+            </div>
+            <img src="office-1.JPG">
+        </div>
+    </div>
+
+
+    <div style="display: none">
+        <div class="box-modal casecase" id="photo2">
+            <div class="box-modal_close arcticmodal-close">
+                <img src="close.png">
+            </div>
+            <img src="office-2.JPG">
+        </div>
+    </div>
+
+
+    <div style="display: none">
+        <div class="box-modal casecase" id="photo3">
+            <div class="box-modal_close arcticmodal-close">
+                <img src="close.png">
+            </div>
+            <img src="office-3.JPG">
+        </div>
+    </div>
+
+    <div style="display: none">
+        <div class="box-modal casecase" id="photo4">
+            <div class="box-modal_close arcticmodal-close">
+                <img src="close.png">
+            </div>
+            <img src="office-4.JPG">
+        </div>
+    </div>
+
+
+    <div style="display: none">
+        <div class="box-modal casecase" id="politics">
+            <div class="box-modal_close arcticmodal-close">
+                <img src="close.png">
+            </div>
+            <h2>Политика конфидециальности</h2>
+            <p>
+                СОГЛАШЕНИЕ О ПЕРЕДАЧЕ И ОБРАБОТКЕ ПЕРСОНАЛЬНЫХ ДАННЫХ<br>
+                Оставляя заявку на нашем сайте, Гражданин дает согласие на:
+            </p>
+                <ul>
+                    <li>обработку персональных данных, предусмотренную в п.3 ч.1 ст.3 ФЗ от
+                        27.07.2006 № 152-Ф3 "О персональных данных"</li>
+                    <li>подписку на электронные почтовые и смс-рассылки информационного и
+                        рекламного содержания.</li>
+                </ul>
+            <p>Под персональными данными понимаются:<br>
+
+                Имя, контактные данные (телефон и адрес электронной почты), информация
+                необходимая для расчета стоимости заказа.<br>
+                Гражданин, принимая настоящее Соглашение, дает согласие на то, что обработка
+                персональных данных может включать в себя следующие действия: сбор,
+                систематизацию, накопление, хранение, уточнение (обновления, изменение),
+                использование, уничтожение.<br>
+                Администрация сайта принимает все необходимые меры для защиты от
+                неправомерного доступа, изменения, раскрытия или уничтожения персональных
+                данных Гражданина.<br>
+                Администрация сайта предоставляет доступ к персональным данным Гражданина
+                только тем третьим лицам, которым эта информация необходима для
+                обеспечения исполнения обязательств перед Гражданином.<br>
+                Администрация сайта имеет право использовать предоставленные Гражданином
+                персональные данные в целях обеспечения соблюдения требований
+                действующего законодательства Российской Федерации (в том числе в целях
+                предупреждения и/или пресечения незаконных и/или противоправных действий
+                Граждан).<br>
+                Отзыв согласия на обработку персональных данных осуществляется путем
+                направления заявления в простой письменной форме.<br>
+                Заявление может быть направлено по электронному адресу: <a href="mailto:info@chto-kuda.ru">info@chto-kuda.ru</a>
+                или по адресу 690017, г. Владивосток, ул. Слуцкого 5 А, стр. 3, ООО «ИмпортЛайн»
+            </p>
+        </div>
+    </div>
     <script src="jquery-1.11.2.min.js"></script>
     <script src="jquery.bxslider.min.js"></script>
     <script src="jquery.arcticmodal-0.3.min.js"></script>
+    <script src="tab.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
